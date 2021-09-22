@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator Tip</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+    <body>
+        <main>
+            <h1 class="title">Splitter</h1>
+            <form class="container" id="form">
+                <div class="left-side">
+                    <div class="form-control">
+                        <label for="bill">Bill</label>
+                        <input type="text" value="" id="bill">
+                    </div>
+                    
+                    <div class="form-control">
+                        <label for="tip">Select Tip $</label>
+                        <div class="selected-tip">
+                            <button id="five" value="5">5%</button>
+                            <button id="teen" value="10">10%</button>
+                            <button id="fifteen" value="15">15%</button>
+                            <button id="tFive"  value="25">25%</button>
+                            <button id="fifty" value="50">50%</button>
+                            <input type="text" id="tip-input"/>
+                        </div>
+                    </div>
+
+                    <div class="form-control">
+                        <div class="labels">
+                            <label for="numPeople">Number of people</label>
+                            <label for="Error" id="error">Can't be zero</label>
+                        </div>
+                        <input type="text" id="peopleNum">
+                    </div>
+                </div>
+
+                <div class="right-form">
+                <div class="form-controls">
+                    <div class="form-control">
+                        <div class="tip-amount">
+                            <h2>Tip Amount</h2>
+                            <span>/ Person</span>
+                        </div>
+                        <h1 id="tip-amount">$0.00</h1>
+                    </div>
+
+                    <div class="form-control total">
+                        <div class="total">
+                            <h2>Total</h2>
+                            <span>/ Person</span>
+                        </div>
+                        <h1 id="total">$0.00</h1>
+                    </div>
+                </div>
+
+                    <button class="reset-btn" id="submit-btn">Reset</button>
+                </div>  
+            </form>
+        </main>    
+    </body>
+</html>
